@@ -1,8 +1,8 @@
 import json
 import os
+import getURL_ID
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
 def freqAccumulator(wordFreqDict):
     data = {}
     with open(os.path.join(BASE_DIR, 'freq_all.json'), 'r', encoding='UTF8') as f:
@@ -25,18 +25,18 @@ def newArticleDict(wordFreqDict, URI):
     with open(os.path.join(BASE_DIR, 'articleDict.json'), 'r') as f:
         data = json.load(f)
 
+    URL_ID = getURL_ID.getID(URI)
+
     keyExists = 0
     key_list = data.keys()
-
     for n in key_list:
-        print(n == URI)
-        if n is URI:
+        if n == URL_ID:
             keyExists = 1
             break
 
     if keyExists is 0:
-        data[URI] = wordFreqDict
-        # freqAccumulator(wordFreqDict)
+        data[URL_ID] = wordFreqDict
+        freqAccumulator(wordFreqDict)
     else:
         print("YOU ALREADY ACCUMULATED THIS WORD FREQUENCY DICTIONARY")
 

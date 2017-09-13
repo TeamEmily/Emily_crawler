@@ -1,9 +1,8 @@
 from konlpy.tag import Twitter
 import nltk
 
-def getWordFrequencyDict(text):
+def FreqAnalyzer(text):
     twitter = Twitter()
-    #tokens = twitter.morphs(msg)
     tokens_ko = twitter.nouns(text)
     ko = nltk.Text(tokens_ko, name='뉴스기사')
 

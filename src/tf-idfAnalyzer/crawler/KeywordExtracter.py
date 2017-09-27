@@ -51,4 +51,6 @@ def TFIDF_Analyzer(WordFrequencyDictionary):
 
     c = Counter(result_sorted)
     Keywords = c.most_common(10)
-    print(Keywords)
+    # print(Keywords)
+
+    return Keywords

@@ -1,8 +1,6 @@
 from .DictionaryManager import newArticleDict
 from .FrequencyAnalyzer import FreqAnalyzer
-from .IDExtracter import IDExtracter
-from .TextExtracter import textExtracter
-from .TitleExtracter import titleExtracter
+from .articleDataExtracter import articleDataExtracter
 from .KeywordExtracter import TFIDF_Analyzer
 import pymysql.cursors
 import time
@@ -10,9 +8,10 @@ import time
 conn = pymysql.connect(host='175.208.189.127', port=3306, user='admin', password='1234', db='emily', charset='utf8mb4')
 
 def crawler(URL):
-    text = textExtracter(URL)
-    title = titleExtracter(URL)
-    articleID = IDExtracter(URL)
+    dataTuple = articleDataExtracter(URL)
+    text = dataTuple[0]
+    title = dataTuple[1]
+    articleID = dataTuple[2]
     wordFrequencyDictionary = FreqAnalyzer(text)
     newArticleDict(wordFrequencyDictionary, articleID)
     keyword_list = TFIDF_Analyzer(wordFrequencyDictionary)

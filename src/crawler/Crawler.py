@@ -12,16 +12,15 @@ def crawler(URL):
     text = dataTuple[0]
     title = dataTuple[1]
     articleID = dataTuple[2]
+    articleLink = URL
     wordFrequencyDictionary = FreqAnalyzer(text)
     newArticleDict(wordFrequencyDictionary, articleID)
     keyword_list = TFIDF_Analyzer(wordFrequencyDictionary)
-
-    time.sleep(3)
-
-    try:
-        with conn.cursor() as cursor:
-            sql = 'INSERT INTO articles (id, title, keyword1, keyword2, keyword3, keyword4, keyword5, category) VALUES (%s, %s, %s, %s, %s, %s, %s, %s) ON DUPLICATE KEY UPDATE id = VALUES(id)'
-            cursor.execute(sql, (articleID, title, keyword_list[0][0], keyword_list[1][0], keyword_list[2][0], keyword_list[3][0], keyword_list[4][0], '정치'))
-        conn.commit()
-    finally:
-        print("DB UPDATED")
+    #
+    # try:
+    #     with conn.cursor() as cursor:
+    #         sql = 'INSERT INTO test (id, test) VALUES (%s, %s) ON DUPLICATE KEY UPDATE id=VALUES(id)'
+    #         cursor.execute(sql, (articleID, )
+    #     conn.commit()
+    # finally:
+    #     print("DB UPDATED")

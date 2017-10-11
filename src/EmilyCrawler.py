@@ -3,6 +3,13 @@ import lxml
 from bs4 import BeautifulSoup
 import urllib.request
 
+category_URL = ["http://news.naver.com/main/main.nhn?mode=LSD&mid=shm&sid1=100",
+                "http://news.naver.com/main/main.nhn?mode=LSD&mid=shm&sid1=101",
+                "http://news.naver.com/main/main.nhn?mode=LSD&mid=shm&sid1=102",
+                "http://news.naver.com/main/main.nhn?mode=LSD&mid=shm&sid1=103",
+                "http://news.naver.com/main/main.nhn?mode=LSD&mid=shm&sid1=104",
+                "http://news.naver.com/main/main.nhn?mode=LSD&mid=shm&sid1=105",
+                ]
 
 politics_URL = "http://news.naver.com/main/main.nhn?mode=LSD&mid=shm&sid1=100"
 source_code_from_URL = urllib.request.urlopen(politics_URL)

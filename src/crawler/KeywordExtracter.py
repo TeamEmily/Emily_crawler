@@ -35,7 +35,7 @@ def get_idf(word):
     return math.log(num_articles() / num_container(word))
 
 def get_tfidf(word, wordDict):
-    return get_tf(word, wordDict) * get_idf(word)
+    return round((get_tf(word, wordDict) * get_idf(word)), 5)
 
 
 def TFIDF_Analyzer(WordFrequencyDictionary):
@@ -50,7 +50,7 @@ def TFIDF_Analyzer(WordFrequencyDictionary):
         result_sorted[n] = result[n]
 
     c = Counter(result_sorted)
-    Keywords = c.most_common(10)
+    Keywords = c.most_common(5)
     # print(Keywords)
 
     return Keywords

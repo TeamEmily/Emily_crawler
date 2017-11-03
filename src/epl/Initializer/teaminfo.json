@@ -1,0 +1,104 @@
+{
+    "teaminfo": [
+        {
+            "team": "Manchester City",
+            "stadium": "Old Trafford",
+            "manager": "Jose Mourinho"
+        },
+        {
+            "team": "Manchester United",
+            "stadium": "Etihad Stadium",
+            "manager": "Josep Guardiola"
+        },
+        {
+            "team": "Tottenham",
+            "stadium": "Wembley Stadium",
+            "manager": "Mauricio Pochettino"
+        },
+        {
+            "team": "Arsenal",
+            "stadium": "Emirates Stadium",
+            "manager": "Arsene Wenger"
+        },
+        {
+            "team": "Chelsea",
+            "stadium": "Stamford Bridge",
+            "manager": "Antonio Conte"
+        },
+        {
+            "team": "Liverpool",
+            "stadium": "Anfield",
+            "manager": "Jurgen Klopp"
+        },
+        {
+            "team": "Burnley",
+            "stadium": "Turf Moor",
+            "manager": "Sean Dyche"
+        },
+        {
+            "team": "Watford",
+            "stadium": "Vicarage Road",
+            "manager": "Marco Silva"
+        },
+        {
+            "team": "Newcastle United",
+            "stadium": "St. James Park",
+            "manager": "Rafael Benitez"
+        },
+        {
+            "team": "Southampton",
+            "stadium": "St. Marys Stadium",
+            "manager": "Mauricio Andres Pellegrino"
+        },
+        {
+            "team": "Leicester",
+            "stadium": "King Power Stadium",
+            "manager": "Claude Puel"
+        },
+        {
+            "team": "Brighton",
+            "stadium": "American Express Community Stadium",
+            "manager": "Chris Hughton"
+        },
+        {
+            "team": "Huddersfield",
+            "stadium": "John Smiths Stadium",
+            "manager": "David Wagner"
+        },
+        {
+            "team": "Stoke City",
+            "stadium": "Bet365 Stadium",
+            "manager": "Mark Hughes"
+        },
+        {
+            "team": "West Bromwich Albion",
+            "stadium": "The Hawthorns",
+            "manager": "Tony Pulis"
+        },
+        {
+            "team": "West Ham",
+            "stadium": "London Stadium",
+            "manager": "Slaven Bilic"
+        },
+        {
+            "team": "Swansea",
+            "stadium": "Liberty Stadium",
+            "manager": "Paul Clement"
+        },
+        {
+            "team": "Everton",
+            "stadium": "Goodison Park",
+            "manager": "NONE"
+        },
+        {
+            "team": "Bournemouth",
+            "stadium": "Vitality Stadium",
+            "manager": "Eddie Howe"
+        },
+        {
+            "team": "Crystal Palace",
+            "stadium": "Selhurst Park",
+            "manager": "Roy Hodgson"
+        }
+    ]
+}
